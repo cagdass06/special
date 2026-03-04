@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Mart Dünya Kadınlar Günün Kutlu Olsun ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #ff85a2;
+            --soft-gold: #f4d03f;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff5f7;
+            overflow-x: hidden;
+        }
+        .font-cursive { font-family: 'Dancing Script', cursive; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+
+        .floating-heart {
+            position: absolute;
+            pointer-events: none;
+            z-index: 10;
+            animation: floatUp 4s ease-in forwards;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #ff4d6d, #ff85a2, #ffb3c1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 133, 162, 0.2);
+        }
+
+        .reveal-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal-text.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center text-center p-6 bg-white overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <circle cx="10" cy="10" r="15" fill="#ff85a2" />
+                <circle cx="90" cy="80" r="20" fill="#ffb3c1" />
+                <circle cx="50" cy="50" r="25" fill="#ffe5ec" />
+            </svg>
+        </div>
+
+        <div class="z-20">
+            <h2 class="text-pink-500 font-semibold tracking-widest uppercase mb-4 animate-pulse">8 MART DÜNYA KADINLAR GÜNÜ</h2>
+            <h1 class="font-serif text-5xl md:text-7xl mb-6 gradient-text">Sana Özel Bir Gün</h1>
+            <p class="max-w-md mx-auto text-lg text-slate-500 mb-8 italic">"Dünya seninle daha güzel, daha renkli ve çok daha anlamlı..."</p>
+            <button onclick="sendHeart(event)" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full shadow-lg transition-all transform hover:scale-105 active:scale-95">
+                Kalbimi Gönder ❤️
+            </button>
+        </div>
+
+        <div class="absolute bottom-10 animate-bounce">
+            <svg class="w-6 h-6 text-pink-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Why You Are Special Section -->
+    <section class="py-20 px-6 max-w-5xl mx-auto">
+        <h3 class="text-center font-serif text-3xl mb-16 underline decoration-pink-200 underline-offset-8">Neden Bugün Senin Günün?</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-pink-50 card-hover transition-all text-center">
+                <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">💪</div>
+                <h4 class="font-semibold text-xl mb-3">Güçlü Duruşun</h4>
+                <p class="text-slate-500 text-sm">Sadece zorlukları aşmıyorsun, onlara öyle bir zarafetle meydan okuyorsun ki... Senin bu güçlü ve eğilmeyen duruşun, benim hayattaki en büyük hayranlığım ve sığınağım.</p>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-pink-50 card-hover transition-all text-center">
+                <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">✨</div>
+                <h4 class="font-semibold text-xl mb-3">Işığın</h4>
+                <p class="text-slate-500 text-sm">Seni her gördüğümde çevrene yaydığın o eşsiz ışığa hayran kalıyorum. Umarım o güzel ışıltın hayatımdan hiç eksilmez.</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-pink-50 card-hover transition-all text-center">
+                <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">🤍</div>
+                <h4 class="font-semibold text-xl mb-3">Sevgin</h4>
+                <p class="text-slate-500 text-sm">Dünyamı daha anlamlı kılan en güzel şey; senin bana olan sevgin ve bana verdiğin eşsiz değer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalized Message -->
+    <section class="bg-pink-500 py-20 px-6 text-white text-center relative overflow-hidden">
+        <div class="max-w-3xl mx-auto z-20 relative">
+            <p class="font-cursive text-4xl md:text-5xl mb-8">Kelebeğim🦋,</p>
+            <p class="text-lg md:text-xl leading-relaxed mb-8 font-light">
+                Varlığınla dünyamı güzelleştiren, her zorlukta gücüyle bana ışık olan en değerli kadın sensin. Sadece bugün değil, hayatımda olduğun her gün iyi ki varsın. 8 Mart Dünya Kadınlar Günün kutlu olsun sevgilim. Seni her şeyden çok seviyorum, en büyük iyikim.
+            </p>
+            <div class="h-px w-24 bg-white/50 mx-auto mb-8"></div>
+            <p class="font-serif italic text-2xl">Seni çok seviyorum çiçeğim.</p>
+        </div>
+        
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+        <div class="absolute bottom-0 left-0 w-48 h-48 bg-black/5 rounded-full -ml-24 -mb-24"></div>
+    </section>
+
+    <!-- Interactive Surprise -->
+    <section class="py-20 px-6 text-center">
+        <div class="reveal-text" id="revealSection">
+            <h3 class="text-2xl font-semibold mb-6">Küçük Bir Sürpriz?</h3>
+            <p class="text-slate-500 mb-8">Aşağıdaki kutuya dokun ve senin için hazırladığım çiçeği al!</p>
+            
+            <button onclick="showGift()" id="giftBtn" class="text-6xl transition-transform hover:scale-110 active:scale-90 focus:outline-none">
+                🎁
+            </button>
+            
+            <div id="flowerArea" class="mt-8 hidden opacity-0 transition-opacity duration-1000">
+                <div class="text-8xl mb-4">🌹</div>
+                <p class="text-pink-600 font-semibold text-xl">Bu gül hiç solmayacak, tıpkı sana olan sevgim gibi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 text-center text-slate-400 text-sm border-t border-slate-100">
+        <p>Seni Seven Biri Tarafından AŞK ile Hazırlandı</p>
+        <p class="mt-2"></p>
+    </footer>
+
+    <script>
+        // Floating Heart Function
+        function sendHeart(e) {
+            const heart = document.createElement('div');
+            heart.innerHTML = '🤍';
+            heart.classList.add('floating-heart', 'text-2xl');
+            
+            // Random position near the click or center
+            const x = e ? e.clientX : window.innerWidth / 2;
+            const y = e ? e.clientY : window.innerHeight / 2;
+            
+            heart.style.left = x - 15 + 'px';
+            heart.style.top = y - 15 + 'px';
+            
+            // Random horizontal drift
+            const drift = (Math.random() - 0.5) * 100;
+            heart.style.setProperty('--drift', drift + 'px');
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 4000);
+        }
+
+        // Show Flower Surprise
+        function showGift() {
+            const btn = document.getElementById('giftBtn');
+            const area = document.getElementById('flowerArea');
+            
+            btn.innerHTML = '✨';
+            area.classList.remove('hidden');
+            setTimeout(() => {
+                area.classList.add('opacity-100');
+            }, 50);
+            
+            // Multi hearts effect
+            for(let i=0; i<15; i++) {
+                setTimeout(() => sendHeart(), i * 150);
+            }
+        }
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-text').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
